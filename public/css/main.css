@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    color: black;
+}
+body{
+    font-family: 'Roboto', 'Arial', sans-serif;;
+
+    background-color: rgb(197, 207, 228);
+
+}
+
+/* Label */
+.search-label{
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+.search-label p{
+    font-size: 32px;
+    font-weight: 700;
+
+
+}
+
+
+/* Search Elements */
+.search-settings{
+    padding-top: 8px;
+}
+.search-settings ul{
+    padding-top: 6px;
+}
+.search-box{
+    padding: 1px;
+}
+.search-box > div:first-child{
+    padding: 10px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+
+    background-color: beige;
+    overflow: hidden;
+}
+.search-box > div:last-child{
+    padding: 1px;
+}
+
+#search{
+    display: flex;
+
+}
+#search input{
+    width: 100%;
+
+    padding: 4px 6px 4px 6px; /*top right bottom left*/
+
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+
+.search-label p{
+    margin: 0;
+}
+
+
+
+/* Colummn */
+.search-settings .col{
+    padding: 0;
+    margin: 0 12px;
+}
+.search-settings .col:nth-child(1){
+    margin-right: 2px;;
+}
+.search-settings .col:nth-child(2){
+    margin-left: 6px;
+}
+.search-settings .col:nth-child(3){
+    margin-left: 0px;
+    margin-right: 2px;
+}
+.search-settings .col:nth-child(4){
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.search-settings .col:nth-child(5){
+    margin-left: 0px;
+    margin-right: 2px;
+}
+.search-settings .col:nth-child(6){
+    margin-left: 6px;   
+}
+
+
+.col:nth-child(1) p,
+.col:nth-child(3) p,
+.col:nth-child(6) label{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: white;
+    padding: 5px;
+
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    font-weight: 500;
+}
+.cost-box label+p{
+    padding-top: 5px;
+    margin: 0;
+}
+.cost-box div:first-child{
+    display: flex;
+}
+.value-box{
+    display: flex;
+    justify-content: center;
+}
+
+.search-submit-button{
+    padding: 4px 8px 4px 8px; /*top right bottom left*/
+
+    font-weight: 500;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #787dd1;
+}
+.search-submit-button:hover{
+    background-color: #585daa;
+}
+
+
+
+/* Main Section with Lessons */
+.search_results{
+    margin-top: 15px;
+}
+.search_results > h3{
+    padding: 6px 8px 0 8px; /*top right bottom left*/
+    margin: 0;
+}
+.posts-block{
+    padding: 5px;
+}
+
+
+
+#lesson-box{
+    padding: 10px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+
+    background-color: beige;
+    overflow: hidden;
+}
+.lesson-content{
+    padding-left: 5px;
+}
+
+.lesson-category-box:after{
+    content: ' |';
+}
+.lesson-cost-box:before{
+    content: '| ';
+}
+.lesson-cost-box:after{
+    content: ' |';
+}
+.lesson-level-box:before{
+    content: '| ';
+}

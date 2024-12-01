@@ -1,0 +1,139 @@
+
+section.main{
+    background-color: rgba(225, 225, 225, 0.775);
+    
+    padding-bottom: 20px;
+}
+
+
+.carousel-block{
+    border-bottom: 3px solid darkgray;
+
+}
+
+.some-posts{
+    margin-top: 20px;
+}
+.post{
+    border: 1px solid darkgray;
+    border-radius: 10px;
+
+    background-color: beige;
+    overflow: hidden;
+
+    margin: 10px;
+}
+.post div:first-child{
+    padding: 5px 5px 5px 5px; /*top right bottom left*/
+    background-color: rgba(66, 73, 211, 0.351);
+}
+.post div:last-child{
+    padding: 5px 5px 5px 5px; /*top right bottom left*/
+    
+}
+
+.post > div{
+    display: flex;
+    justify-content: space-between;
+}
+.post div p{
+    margin: 0;    
+}
+
+
+
+/* Courusel */
+.carousel-caption{
+    background-color: rgba(160, 160, 160, 0.8);
+}
+.carousel-inner .carousel-item:first-child .carousel-caption{
+    text-align: left;
+
+    padding-left: 20px;
+
+    width: 400px;
+}
+.carousel-inner .carousel-item:last-child .carousel-caption{
+    left: 55%;
+    width: 400px;
+}
+
+
+.carousel-item .carousel-caption p{
+    margin: 0;
+}
+.carousel-caption p,
+.carousel-caption h5{
+    color: black;
+} 
+
+
+/* Prev and Next buttons */
+.carousel-control-prev, .carousel-control-next{
+    z-index: 10;
+    width: 80px;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    background-color: rgba(79, 79, 79, 0.2);
+}
+
+
+/* Indicators */
+.carousel-indicators{
+    z-index: 8;
+}
+
+
+/* Join US Link */
+#join_us-link a[href="https://lerner.dev/register"]{
+    color: #000;
+    text-decoration: none;
+    
+}
+#join_us-link a[href="https://lerner.dev/register"]:hover{
+    color:rgb(93, 93, 93)
+    
+}
+
+
+
+/* Gogo button */
+.gogo-button-box{
+    position: relative;
+
+    text-align: center;
+    
+}
+.gogo-button{
+    position: relative;
+
+    padding: 10px 15px 10px 15px; /*top right bottom left*/
+    border-radius: 30px;
+    border: 1px solid transparent;
+
+    background-color: #424AD3;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+.gogo-button:hover{
+    background-color: #343aaa;
+    border: 1px solid black;
+
+}
+
+
+
+/* Footer */
+section.footer{
+    width: 100%;
+
+    background-color: rgb(90, 90, 90);
+}
+section.footer{
+    padding-top: 15px;
+}
+.footer-content > p{
+    margin-bottom: 5px;
+}
+
