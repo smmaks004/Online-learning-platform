@@ -30,7 +30,6 @@ Restoring missing files (You will need to continue working in the console. The l
         # DB_DATABASE= laravel
         # DB_USERNAME=root
         # DB_PASSWORD=
-
 	And change it to:
         DB_CONNECTION= mysql
         DB_HOST=127.0.0.1
@@ -38,7 +37,6 @@ Restoring missing files (You will need to continue working in the console. The l
         DB_DATABASE= lerner
         DB_USERNAME= lerner
         DB_PASSWORD= lerner
-
     2.	Enter the command "composer install" to create the "vendor" folder
     3.	Enter the command "php artisan key:generate" into the console
     4.	Enter the command "npm install" into the console to create "node_module" folder
