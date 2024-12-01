@@ -13,7 +13,7 @@ Some elements of the project are not finished, such as:
 ## Database
 Before attempting to run the project, you must first download some files and create a database structure.
 Creating the data structure (I worked using PhpMyAdmin):
-1.	Create a new database named 'lerner' . Go to SQL queries and enter this:
+1.	Create a new database named 'lerner'. Go to SQL queries and enter this:
 ```
 CREATE USER 'lerner '@'%' IDENTIFIED by 'lerner';
 GRANT USAGE ON *.* TO 'lerner'@'%';
@@ -25,7 +25,7 @@ GRANT ALL PRIVILEGES ON lerner.* TO 'lerner'@'%';
 Restoring missing files (You will need to continue working in the console. The location must match the location of the project):
 1.	First you need to create an .env file, to do this enter in the console:
 ```cp .env.example .env```
-Then we open the ".env"  file and find the fragment:
+Then we open the ".env" file and find the fragment:
 ```
 DB_CONNECTION=sqlite
 # DB_HOST=127.0.0.1
@@ -33,19 +33,18 @@ DB_CONNECTION=sqlite
 # DB_DATABASE=laravel
 # DB_USERNAME=root
 # DB_PASSWORD=
-```
-            
+```     
 And change it to:
 ```
-DB_CONNECTION= mysql
+DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=lerner
 DB_USERNAME=lerner
 DB_PASSWORD=lerner
 ```
-2.	Enter the command "`composer install`" to create the "vendor" folder
-3.	Enter the command "`php artisan key:generate`" into the console
-4.	Enter the command "`npm install`" into the console to create "node_module" folder
-5.	Enter the command "`php artisan migrate:refresh --seed`" into the console
-6.	The last thing you need to enter in the console is "`npm run dev`"
+2.	Enter the command `composer install` to create the "vendor" folder
+3.	Enter the command `php artisan key:generate` into the console
+4.	Enter the command `npm install` into the console to create "node_module" folder
+5.	Enter the command `php artisan migrate:refresh --seed` into the console
+6.	The last thing you need to enter in the console is `npm run dev`
