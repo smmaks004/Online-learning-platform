@@ -3,6 +3,7 @@ All work was done using "Wamp.net", if you are using "Docker" or "Herd", then th
 This project was created with these versions: MySQL 8.2.0, PHP 8.3.1, Nginx 1.25.3, Node.js 20.14.0
 
 Some elements of the project are not finished, such as:
+
     - Email verification
     - Password reset
     - The settings section, where there should be different options for customizing your environment
@@ -14,6 +15,7 @@ Some elements of the project are not finished, such as:
 Before attempting to run the project, you must first download some files and create a database structure.
 Creating the data structure (I worked using PhpMyAdmin):
     1.	Create a new database named 'lerner' . Go to SQL queries and enter this:
+    
         `CREATE USER 'lerner '@'%' IDENTIFIED by 'lerner';
         GRANT USAGE ON *.* TO 'lerner'@'%';
         CREATE DATABASE IF NOT EXISTS lerner ;
